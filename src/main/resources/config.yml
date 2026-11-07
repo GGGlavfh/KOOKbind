@@ -1,0 +1,17 @@
+websocket:
+    # WebSocket 服务端监听地址。
+    host: 127.0.0.1
+    # 监听端口
+    port: 25570
+    # 单条连接最大失败次数，超过该次数后服务端会主动断开连接。
+    max-failures: 10
+    # 是否允许非本机的连接。
+    allow-remote: false
+    # 心跳超时（秒）：服务端按此间隔发 Ping，收不到 Pong 就判定连接已断开。0 表示关闭
+    connection-lost-timeout-seconds: 60
+
+verification-code:
+    # 验证码有效期（秒）。
+    ttl-seconds: 300
+    # 过期验证码清理任务的执行间隔（秒）
+    purge-interval-seconds: 60

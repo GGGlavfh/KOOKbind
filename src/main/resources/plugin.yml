@@ -1,0 +1,28 @@
+name: KOOKbind
+version: '1.0.1'
+
+main: com.GGGlavfh.kookbind.kookbind
+api-version: '26.2'
+load: POSTWORLD
+authors: [ GGGlavfh ]
+
+# PlaceholderAPI 是软依赖：装了才注册 %kook_bound%（true/false）与 %kook_uid%（KOOK 用户 id）
+softdepend: [ PlaceholderAPI ]
+
+libraries:
+    - org.xerial:sqlite-jdbc:3.53.4.0
+    - org.java-websocket:Java-WebSocket:1.6.0
+
+commands:
+    kookbind:
+        description: 获取绑定验证码，或解除绑定
+        usage: /kookbind [unbind [玩家]]
+
+permissions:
+    kookbind.unbind.self:
+        description: 允许玩家解除自己的绑定（/kookbind unbind）
+        default: true
+    kookbind.unbind.others:
+        description: 允许解除任意玩家的绑定
+        default: op
+
