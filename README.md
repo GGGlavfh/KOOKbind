@@ -4,7 +4,7 @@
 ## 权限
 |权限节点|默认状态|含义|
 |-------|--------|---|
-|kookbind.unbind.self|ture|是否允许玩家解除自己的绑定（/kookbind unbind）|
+|kookbind.unbind.self|true|是否允许玩家解除自己的绑定（/kookbind unbind）|
 |kookbind.unbind.others|op|允许解除任意玩家的绑定|
 ## PAPI
 |占位符|返回值|
